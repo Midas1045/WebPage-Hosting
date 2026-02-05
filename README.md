@@ -16,6 +16,7 @@ This documentation outlines the process of creating and configuring an Azure Vir
     * Installing NGINX
     * Starting and Enabling NGINX
 6. Static Website Development
+    * 
     * Preparing Website Files
     * Uploading Files to the Virtual Machine
     * Configuring NGINX For Static Hosting
