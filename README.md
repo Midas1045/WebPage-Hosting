@@ -96,5 +96,11 @@ This section covers the steps used in installing and configuring NGINX on the vi
 
 ## Static Website Development
 This section covers the creation and deployment of a static website on the NGINX web server. A static website consists of fixed content such as HTML, CSS, images, and JavaScript files that do not change dynamically. By deploying static web pages, users can host simple, fast, and secure websites ideal for portfolios or informational pages.
+* To download a static website template, visit themewagon.com and select the template that best fits your needs.
+* After downloading the template, extract the contents of the zipped file to access the website files.
+* 
+
+* 
+
 
 
