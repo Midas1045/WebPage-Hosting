@@ -68,7 +68,14 @@ This project demonstrates the end-to-end setup, including VM provisioning, netwo
  <p align="center"> <img width="800" height="455" alt="Screenshot 2026-02-05 190954" src="https://github.com/user-attachments/assets/e07aae63-f225-4b85-8220-c2548de020c5" />
 
 ## Connecting to the Virtual Machine using SSH and verifying connection
+This covers how to securely connect to the virtual machine using SSH. An SSH client is used to establish a remote connection to the VM, allowing direct access to the server for configuration, management, and verification tasks.
+* To connect to the virtual machine, MobaXterm was used as the SSH client.
+* The public IP address of the VM and the configured username were entered into MobaXterm to initiate the SSH connection.
+* Upon successful authentication, access to the VM’s terminal was established.
+* Connection was verified by executing basic commands on the VM, confirming that the instance was reachable and responding as expected.
 
+<p align="center"> <img width="800" height="455" alt="Screenshot 2026-02-05 192912" src="https://github.com/user-attachments/assets/2127da89-0e84-4445-8b73-e2b4b2a283bd" />
 
+## 
 
      
