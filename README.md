@@ -76,6 +76,14 @@ This covers how to securely connect to the virtual machine using SSH. An SSH cli
 
 <p align="center"> <img width="800" height="455" alt="Screenshot 2026-02-05 192912" src="https://github.com/user-attachments/assets/2127da89-0e84-4445-8b73-e2b4b2a283bd" />
 
-## 
+## NGINX Installation and Configuration
+This section covers the steps used in installing and configuring NGINX on the virtual machine. NGINX is used as the web server to serve static web content, and proper configuration ensures that the website is accessible and runs efficiently.
+* On the initiated session on Mobaxtern, Use the command "sudo apt update". This updates the VM package list to ensure the latest software is available for    installation.
+* If there are items to be upgraded, use this command "apt list --upgradable" to list them.
+* The next step is to upgrade these items using the command "sudo apt upgrade". It ensures that all installed packages are updated to their latest versions.
+* After upgrading, install NGINX using the command "sudo apt install nginx -y". This command installs the NGINX web server along with all required             dependencies.
+* Use the command "sudo systemctl status nginx " to check if NGINX is operational.
+
+<p align="center"> <img width="800" height="419" alt="Screenshot 2026-02-05 200433" src="https://github.com/user-attachments/assets/3dec24b5-87a9-44a5-95d3-70c2f1f2eda2" />
 
      
