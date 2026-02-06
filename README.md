@@ -123,7 +123,7 @@ This section covers the creation and deployment of a static website on the NGINX
 2. To troubleshoot, i had to use the command "sudo mv index.html /var/www/html" to move just the webfile. It started displaying but other web assets      were still in the folder so the website looked scanty. I now used the command "sudo mv * /var/www/html" to move everything in the folder to the        html directory. By doing this, the website displayed correctly.
 
 ## Conclusion
-The project involved creating a virtual machine and hosting a static website on it. The deployment and testing process confirmed that the website is fully operational. Using the VM’s public IP 51.141.119.132, the site was accessible via a web browser. The website is now live, functional. This demonstrates the ability to set up a virtual machine, configure a web server, and deploy a web application in a cloud environment effectively.
+The project involved creating a virtual machine and hosting a static website on it. The deployment and testing process confirmed that the website is fully operational. Using the VM’s public IP 51.141.119.132, the site was accessible via a web browser. The website is now live and functional. This demonstrates the ability to set up a virtual machine, configure a web server, and deploy a web application in a cloud environment effectively.
 
 
 
