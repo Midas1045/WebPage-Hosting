@@ -1,5 +1,8 @@
 # Azure Infrastructure Setup: Virtual Machine Provisioning and NGINX Static Web Hosting
-This documentation outlines the process of creating and configuring an Azure Virtual Machine and deploying NGINX to host a static website. It covers virtual machine setup, network configuration, web server installation, and deployment of static web content to ensure successful website hosting on Azure.
+This documentation outlines the process of creating and configuring an Azure Virtual Machine and deploying NGINX to host a static website. It covers virtual machine setup, network configuration, web server 
+installation, and deployment of static web content to ensure successful website hosting on Azure.
+
+<p align="center"> <img width="800" height="486" alt="vpc-Page-6 drawio" src="https://github.com/user-attachments/assets/199f6cc0-699b-4588-8459-3ec5edb16d85" />
 
 ## Table Of Contents
 1. [Introduction](#introduction)
