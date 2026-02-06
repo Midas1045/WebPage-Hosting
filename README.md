@@ -2,30 +2,30 @@
 This documentation outlines the process of creating and configuring an Azure Virtual Machine and deploying NGINX to host a static website. It covers virtual machine setup, network configuration, web server installation, and deployment of static web content to ensure successful website hosting on Azure.
 
 ## Table Of Contents
-1. Introduction
-2. Prerequisites and Services Used
-3. Creation of the Azure Virtual Machine
+1. [Introduction](#introduction)
+2. [Prerequisites and Services Used](#prerequisites-and-services-used)
+3. [Creation of the Azure Virtual Machine](#creation-of-the-azure-virtual-machine)
     * Resource Group Setup
     * Virtual network and Subnet Configuration
     * Network Security Group (NSG) Configuration
     * VM size and Image Selection
     * Authentication Configuration
-4. Connecting to the Virtual Machine using SSH and verifying connection
-5. NGINX Installation and Configuration
+4. [Connecting to the Virtual Machine using SSH and verifying connection](#connecting-to-the-virtual-machine-and-verifying-connection)
+5. [NGINX Installation and Configuration](#nginx-installation-and-configuration)
     * Updating the Virtual Machine
     * Installing NGINX
     * Starting and Enabling NGINX
-6. Static Website Development
+6. [Static Website Development](#static-website-development)
     * Download a Static Website Template
     * Preparing Website Files
     * Uploading Files to the Virtual Machine
     * Configuring NGINX For Static Hosting
     * Update the DNS record to map the IP address of the server
-7. Testing and Verification
+7. [Testing and Verification](#testing-and-verification)
     * Accessing Website via Public IP
     * Browser Testing
-8. Errors and Troubleshooting
-9. Conclusion
+8. [Errors and Troubleshooting](#errors-and-troubleshooting)
+9. [Conclusion](#conclusion)
 
 ## Introduction
 This project demonstrates the end-to-end setup, including VM provisioning, network and security configuration, web server installation, and deployment of static web content. With this guide, users can gain practical experience in cloud resource management on Azure, understand the basics of web server setup, and ensure that a static website is accessible over the internet in a secure and organized manner.
@@ -97,10 +97,30 @@ This section covers the steps used in installing and configuring NGINX on the vi
 ## Static Website Development
 This section covers the creation and deployment of a static website on the NGINX web server. A static website consists of fixed content such as HTML, CSS, images, and JavaScript files that do not change dynamically. By deploying static web pages, users can host simple, fast, and secure websites ideal for portfolios or informational pages.
 * To download a static website template, visit themewagon.com and select the template that best fits your needs.
-* After downloading the template, extract the contents of the zipped file to access the website files.
-* 
+* After downloading the template, extract the contents of the zipped folder to access the website files.
+* Upload the extracted file contents as a folder into VSCODE and edit some features in the index file that are not needed.
+* After editing the web file content and storing them in a folder, 7zip is used to compress the folder into a zip file. It preserves file structure      thus making file transfers easy and ensuring they remain intact during storage or upload.
+* Navigate to the root directory of your server using '/' command and select the home directory. Then click on the name of the server to display its     contents.
+* Move your compressed file containing your website content into the home directory by uploading it through the MobaXterm SSH client.
+* After uploading, use "cd" command to access the home directory and "ls" to list the contents in the directory. The compressed file will be present     if uploaded correctly.
+* Unzip the compressed file using the command "unzip file name". If the unzip command is unavailable, install by using "sudo apt install unzip -y".
+* After unzipping, use the "ls" command to list the files in your home directory. The zipped and unzipped file will be displayed.
+* Use the ls -la command to list all the files and directories in the unzipped file folder.
+* To move these files and folder to the html folder, use the command "sudo cp -r Hudson-1.0.0/* var/www/html. Use the "ls" command to check and list     the files.
+* Delete the NGINX web content file using "sudo rm index.nginx-debian.html". This would enable your own web files to be displayed instead of the         welcome page.
 
-* 
+## Testing and Validation
+* Used the public IP address of your virtual machine to check if it is live.
+[Watch my video on YouTube](https://youtu.be/ijU0i-vP5xo)
+* Used the local machine to ping the address to check if it is reachable. Total packet loss
+<p align="center"> <img width="719" height="745" alt="Screenshot 2026-02-06 172336" src="https://github.com/user-attachments/assets/e7ed0ed6-7bd4-4314-a585-b3c9dc62cafe" />
+
+## Errors and Troubleshooting
+1. After uploading the web content files to the html folder, the web folder was listed as one of the items in the html file directory. The index.html     was in the folder so my web content could not be served by NGINX. This was after the deletion of the NGINX web file. Accessing the website with my     public address resulted in a forbidden error code.
+2. To troubleshoot, i had to use the command "sudo mv index.html /var/www/html" to move just the webfile. It started displaying but other web assets      were still in the folder so the website looked scanty. I now used the command "sudo mv * /var/www/html" to move everything in the folder to the        html directory. By doing this, the website displayed correctly.
+
+## Conclusion
+The project involved creating a virtual machine and hosting a static website on it. The deployment and testing process confirmed that the website is fully operational. Using the VM’s public IP 51.141.119.132, the site was accessible via a web browser. The website is now live, functional. This demonstrates the ability to set up a virtual machine, configure a web server, and deploy a web application in a cloud environment effectively.
 
 
 
