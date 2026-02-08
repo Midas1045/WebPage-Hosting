@@ -121,7 +121,7 @@ This section covers the creation and deployment of a static website on the NGINX
 
 
 ## Testing and Validation
-* Used the public IP address [IP](51.141.119.132) of my virtual machine to check if it is live.
+* Used the public [IP](51.141.119.132) of my virtual machine to check if it is live.
 [Watch my video on YouTube](https://youtu.be/ijU0i-vP5xo)
 * Used the local machine to ping the address to check if it is reachable. Total packet loss
 <p align="center"> <img width="719" height="745" alt="Screenshot 2026-02-06 172336" src="https://github.com/user-attachments/assets/e7ed0ed6-7bd4-4314-a585-b3c9dc62cafe" />
